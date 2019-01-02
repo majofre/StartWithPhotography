@@ -1,0 +1,39 @@
+#galeriaretratos {
+	background-color: #d5c75f;
+	display: flex;
+	flex-flow: row wrap;
+}
+.blur{
+   -webkit-filter: blur(10px);
+}
+.gris{
+   -webkit-filter: grayscale(100%);
+}
+.sepia{
+   -webkit-filter: sepia(90%);
+}
+
+@media (max-width: 900px) {
+#galeriaretratos {
+	max-width: 900px;
+	width: 100%;
+}
+	#galeriaretratos div img{
+		width: 84%;
+		margin: 4% 8%;
+	}
+}
+
+@media (min-width: 900px) {
+#galeriaretratos {
+	min-width: 900px;
+	height: auto;
+}
+#galeriaretratos div {
+	width: 33.3%;
+}
+#galeriaretratos div img {
+	width: 84%;
+	margin: 4% 8%;
+}
+}
