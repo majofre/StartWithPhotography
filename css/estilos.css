@@ -1,4 +1,5 @@
 body {
+/* Establece el color de fondo negro #02010a */
 background-color: #02010a;
 font-family: 'Dancing Script', cursive;
 margin: 0 auto;
@@ -8,22 +9,27 @@ margin: 0 auto;
 	margin: 0 auto;
 }
 .sombra {
+	/* Cada imagen tiene un efecto de sombra de 2px con color #02010a */
 	box-shadow: 2px 2px 2px #02010a;
 }
 
 header {
 	color: white;
 	background-color: #5b7989;
+	/* Aplica bordes redondeados en las esquinas superiores a 10px */
 	border-radius: 10px 10px 0 0;
 }
 
 header h1 {
+	/* Agrega el Nombre del sitio "Comenzando con la fotografía" ubicado al lado izquierdo, en blanco la letra debe tener una sombra de 2px de color #02010a */
 	padding: 0% 0% 0% 2%;
 	width: 40%;
 	float: left;
 	text-shadow: 2px 2px 2px #02010a;
 }
 
+/* Desarrolla un menú, para la versión desktop, a la derecha con enlaces a tres páginas: Inicio, Paisajes, Retratos.
+La página actual debe tener estilo sin subrayado */
 #menunav{
   width: 50%;
 	float: left;
@@ -49,11 +55,13 @@ ul li a {
 
 #imgsecundaria {
 	background-color: #d5c75f;
+	/* Las imágenes deben ser responsivas */
 	display: flex;
 	flex-flow: row wrap;
 }
 #imgsecundaria div span {
 	width: 100%;
+	/* Las imágenes deben ser responsivas */
 	display: block;
 	text-align: center;
 }
@@ -97,7 +105,9 @@ ul li a {
 
 footer {
   width: 100%;
+	/* Aplica el color de fondo #C6d5c5 */
 	background-color: #C6d5c5;
+	/* Aplica bordes redondeados en las esquinas inferiores a 10px */
 	border-radius: 0 0 10px 10px;
 	display: flex;
 	flex-flow: row wrap;
@@ -111,6 +121,7 @@ figure img {
 	float: left;
 }
 
+/* Utiliza media queries para manejar dos tamaños Desktop: con ancho de 900px o más y móvil con menos de 900px */
 @media (max-width: 900px) {
 .contenido {
 	width: 100%;
@@ -129,6 +140,11 @@ header h1 {
 ul {
 	text-align: center;
 }
+
+/* Imagen Central en esta sección debes ubicar una imagen de tu preferencia, considera lo siguiente:
+    * Esta seccion debe tener la imagen centrada.
+    * Establece como color de fondo #82c3a6
+*/
 #imagencentral {
 	max-width: 900px;
 	width: 100%;
@@ -139,6 +155,12 @@ ul {
 	margin: 2%;
 }
 
+/*
+Imagen Secundaria en esta sección debes ubicar dos imágenes de tu preferencia, debajo de la imagen central una a la derecha y otra a la izquierda ten en cuenta lo siguiente: siguiente:
+    * Esta sección es a dos columnas usando flex para desktop y una columna para móvil
+    * Aplica como color de fondo #d5c75f y un borde de 1px.
+    * Cada columna debe tener una imagen centrada y enlazar: la izquierda "paisajes" aplica un efecto de rotación de 10 grados cuando se coloca el puntero sobre ella, agrega color de sombra #82c3a6 y borde 2px y la derecha "retratos" aplica un efecto de traslación de 5px hacia arriba y 20px a la derecha cuando se coloca el puntero del ratón sobre ella agrega color de sombra #82c3a6 y borde 2px.
+*/
 #imgsecundaria div {
 	max-width: 100%;
 }
@@ -153,12 +175,14 @@ footer {
 	min-height: 300px;
 }
 .piepagina {
+	/* El pie debe estar a cuatro columnas en desktop y una columna en móvil */
 	width: 100%;
 	height: auto;
 	padding: 1% 2.5% 1% 2.5%;
 }
 }
 
+/* Utiliza media queries para manejar dos tamaños Desktop: con ancho de 900px o más y móvil con menos de 900px */
 @media (min-width: 900px) {
 .contenido {
 	width: 900px;
@@ -172,6 +196,7 @@ footer {
 	min-height: 200px;
 }
 .piepagina {
+	/* El pie debe estar a cuatro columnas en desktop y una columna en móvil */
 	width: 20%;
 	height: auto;
 	padding: 1% 2.5% 1% 2.5%;
